@@ -1,0 +1,61 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url = env("DatabaseURL")
+}
+
+model GalaxyGuardAdmins {
+    id Int @id @default(autoincrement()) @unique
+    DiscordUserId String 
+}
+
+model PremiumCodes {
+    CodeId          Int @id @default(autoincrement()) @unique
+    PremiumCode     String @unique
+    Lifetime        Boolean
+    Length          String?
+    ActivatedAt     DateTime?
+    ExpiresAt       DateTime?
+    CreatedTimestamp DateTime
+}
+
+model PremiumServers {
+    ServerId        String @unique
+    Active          Boolean
+    PremiumCodeId   Int
+    StartDate       DateTime
+    EndDate         DateTime?
+}
+
+model ModerationSettings {
+    ServerId        String @unique
+    IgnoredRoles    String[]
+    IgnoredUsers    String[]
+    IgnoredChannel  String[]
+    ModeratorRoles  String[]
+    AdminRoles      String[]
+}
+
+model Warnings {
+    id              Int @id @default(autoincrement()) @unique
+    ServerId        String  
+    UserId          String
+    Reason          String 
+    Moderator       String
+    Timestamp       String
+}
+
+model Cases {
+    id              Int @id @default(autoincrement()) @unique
+    ServerId        String
+    TargetId        String
+    ModeratorId     String
+    CaseType        String
+    Reason          String
+    Timestamp       String
+    Length          String?
+    ExtraNotes      String?
+}

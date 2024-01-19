@@ -1,0 +1,32 @@
+{
+  "colors": {
+    "red": "0xF58E8E",
+    "primary": "0x8EE3F5",
+    "secondary": "70CAD1", 
+    "green": "0x8EF58F",
+    "yellow": "F1F58E", 
+    "orange": "F5C08E", 
+    "invisible": "0x2f3136"
+  }, 
+  "emojis": {
+    "uptime": "<:uptime:1161430115650109481>", 
+    "ping_good": "<:icons_goodping:1161427441051517139>",
+    "ping_mid": "<:icons_idelping:1161427443551326258>",
+    "ping_bad": "<:icons_badping:1161427446730588210>", 
+    "mail": "<:mail_:1161427594718216222>", 
+    "xtwitter": "<:slayer_twitter_Xlogowhite:1161427522853031956>", 
+    "instagram": "<:Instagram_Logo:1161427878706171985>", 
+    "tick": "<:832707787419156544:1166497457044209714>", 
+    "error": "<:923308064512286750:1166497459615309904>", 
+    "neutral": "<:832707803625291826:1166497460806492261>", 
+    "status_online": "<:online_status1:1162951672121790535>", 
+    "status_dnd": "<:dnd_status:1162951565418704957>", 
+    "status_idle": "<:6708_status_idle:1162951584481824798>", 
+    "status_offline": "<:offline_status:1162951645332779058>"
+  }, 
+  "images": {
+    "contact": "http://cdn.galaxyguard.xyz/r/chat.png",
+    "Message_404": "http://cdn.galaxyguard.xyz/r/4040.png",
+    "GlobalSettings": "http://cdn.galaxyguard.xyz/r/GlobalSettings.png"
+  }
+}
