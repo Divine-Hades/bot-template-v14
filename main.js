@@ -1,6 +1,4 @@
 const { Partials, Client, Collection, ClientPresence, EmbedBuilder, Colors, ButtonInteraction } = require("discord.js");
-const { PrismaClient } = require("@prisma/client");
-const prisma = new PrismaClient()
 
 const client = new Client({
     intents: [3276799],
@@ -32,6 +30,6 @@ global.components = new Collection();
 
 require("./Structure/handler")(client)
 
-module.exports = { client, prisma, storage };
+module.exports = { client, storage };
 
 client.login(process.env.TOKEN); 

@@ -1,5 +1,4 @@
 const { Client, Interaction } = require("discord.js");
-const { prisma } = require("../../main");
 
 module.exports = {
     name: "interactionCreate",
